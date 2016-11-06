@@ -1,0 +1,110 @@
+/* Sticky Footer */
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1 0 auto;
+}
+/* Fim sticky footer */
+/* Logo */
+.brand-logo {
+	margin-left: 10px;
+	margin-top: 3px;
+}
+
+.brand-logo > img {
+	vertical-align: middle;
+}
+
+/* Tira margem superior do rodapé */ /*PETOSO BOTOU BG COLOR AQUI*/
+footer.page-footer {
+	margin-top: 0;
+	background-color: #703d6f;
+}
+
+/* capslock no rodapé */
+.white-text {
+	text-transform: uppercase;
+}
+
+/*mudeeeeeei a cor do menu by petoso*/
+.nav-wrapper {
+	background-color: #703d6f;
+}
+
+/*BY PETOSO ESSE TAMBÉM*/
+.nav-wrapper ul a {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+/*PETOSO*/
+.page-footer ul a {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+/* Classes para os títulos da seção */
+	/* Muda tamanho da fonte dos titulos das seções */
+	.titulo-secao {
+		font-size: 2.5rem;
+	}
+	/* Configurãção de titulo com a fonte montserrat, maiusculo e negrito */
+	.titulo {
+		font-family: 'Montserrat', Helvetica, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	/*Borda dos títulos*/
+	.borda-inferior-titulo:before {
+		position: absolute;
+	    margin: auto;
+	    z-index: 1;
+	    content: "";
+	    width: 35%;
+	    height: 2px;
+	    background: #703d6f;
+	    bottom: -9px;
+	    left: 32%;
+	}
+	/* Positon relative na div que tem o h1 para que o position absolute do .borda-inferior-titulo funciona corretamente */
+	.position-titulo {
+		position: relative;
+	}
+/* Fim classes para os títulos de seção */
+
+
+/* Classe apenas para dar uma margem bottom em alguns elementos */
+.margin-bt {
+	margin-bottom: 100px;
+}
+
+/*Menu mobile*/ /*PETOSO MEXEU AQUI*/
+.side-nav a {
+	color: #703d6f;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.logo-menu-mobile {
+	background-color: #333;
+}
+.logo-menu-mobile img{
+	vertical-align: middle;
+}
+
+#fecha-menu-mobile {
+	float: right;
+	margin-right: 10px;
+}
+/* A cor definida aqui, fica no item da lista de "O que fazemos?" e ela tem o efeito light quando clica */
+.collapsible-header, .botao-contato {
+	background-color: #995f6d;
+}
+
+.margin-titulos-paginas {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}

@@ -1,0 +1,158 @@
+
+
+/* Importante para alinhar ao centro os itens do "O que fazemos?" */
+.fazemos-item {
+	text-align: center;
+	display: inline-block;
+	min-width: 180px;
+	color: #fff;
+}
+
+/* Diminuir ou remover (0) a margem entre o card "não perca tempo" e o sticky-footer */
+.card {
+	margin: .5rem 0 .5rem 0;
+}
+
+/*AQUI  FOI O PETOSO Q BOTOU A CULPA É DELE*/
+.card-content {
+	background-color: #a0a0a0;
+}
+
+/*esse nao ta fncionando bu miajuda*/
+.blue-grey {
+	background-color: #a0a0a0 !important;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating),
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{	
+	color: #703d6f;
+}
+
+
+/*Media queries para redimensionar o sublinhado dos títulos*/
+@media screen and (min-width: 320px) {
+	.novidade-borda-titulo:before{
+		width: 50%;
+	    left: 25%;
+	}
+}
+@media screen and (min-width: 374px) {
+	.o-que-fazemos-borda-titulo:before {
+		width: 80%;
+		left: 9%;
+	}
+}
+@media screen and (min-width: 591px) {
+	.o-que-fazemos-borda-titulo:before {
+		width: 50%;
+		left: 24%;
+	}
+}
+@media screen and (min-width: 600px) {
+	.o-que-fazemos-borda-titulo:before {
+		width: 43%;
+		left: 28%;
+	}
+	.novidade-borda-titulo:before{
+		width: 37%;
+	    left: 31%;
+	}
+}
+@media screen and (min-width: 760px) {
+	.o-que-fazemos-borda-titulo:before {
+		width: 43%;
+		left: 28%;
+	}
+	.novidade-borda-titulo:before{
+		width: 37%;
+	    left: 31%;
+	}
+}
+@media screen and (min-width: 820px) {
+	.o-que-fazemos-borda-titulo:before {
+		width: 36%;
+		left: 32%;
+	}
+	.novidade-borda-titulo:before{
+		width: 29%;
+	    left: 36%;
+	}
+}
+@media screen and (min-width: 992px) {
+	.o-que-fazemos-borda-titulo:before {
+		width: 31%;
+		left: 34%;
+	}
+	.novidade-borda-titulo:before{
+		width: 24%;
+	    left: 38%;
+	}
+}
+/*Fim media queries*/
+
+
+
+
+/*Configs do slider*/
+#slides {
+  display: none
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url(../img/pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #9e2020
+}
+
+.parallax-container{
+	margin-bottom: 50px;
+}

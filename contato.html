@@ -1,0 +1,112 @@
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/animate.css" rel="stylesheet"/>
+    <link href="css/materialize.min.css" rel="stylesheet" media="screen,projection" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link rel="icon" href="img/favicon-kiv.png"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+    <title>
+       KP - Contato</title>
+    <link href="css/contato.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper"><a class="brand-logo" href="index.html"><img id="js-logo" src="img/logotipo-kiv-1.png" alt="Logotipo KIV - Link pra home"/></a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="wow bounceInDown" href="portfolio.html">Portfólio</a></li>
+            <li><a class="wow bounceInDown" href="como-funciona.html" data-wow-delay=".5s">Como funciona?</a></li>
+            <li><a class="wow bounceInDown" href="pronta-entrega.html" data-wow-delay="1s">Pronta Entrega</a></li>
+            <li><a class="wow bounceInDown" href="contato.html" data-wow-delay="1.5s">Contato</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li class="logo-menu-mobile"><img src="img/logotipo-kiv-1.png"/><i class="material-icons" id="fecha-menu-mobile">close</i></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="como-funciona.html">Como funciona?</a></li>
+            <li><a href="pronta-entrega.html">Pronta Entrega</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <section class="margin-bt">
+        <div class="position-titulo margin-titulos-paginas">
+          <h2 class="center-align titulo titulo-secao borda-inferior-titulo">Contato</h2>
+        </div>
+        <div class="row">
+          <form class="col s12 m8 offset-m2 l8 offset-l2" method="post" onsubmit="emailjs.sendForm('default_service', 'email_karen_producoes', this); return false;">
+            <div class="input-field col s12">
+              <label for="nome">Nome:</label>
+              <input class="validade" id="nome" type="text" placeholder="Seu nome aqui" name="nome_cliente"/>
+            </div>
+            <div class="input-field col s12">
+              <label for="email">E-mail:</label>
+              <input class="validade" id="email" type="email" placeholder="Seu e-mail aqui" name="email_cliente"/>
+            </div>
+            <div class="input-field col s12">
+              <select name="motivo_contato">
+                <option value="" disabled="disabled" selected="selected">Selecione o motivo do contato</option>
+                <option value="Orcamento">Orçamento</option>
+                <option value="ProntaEntrega">Pronta Entrega</option>
+                <option value="Sugestao">Sugestão</option>
+                <option value="TiraDuvida">Tira Dúvidas</option>
+                <option value="Reclamacao">Reclamação</option>
+                <option value="Elogio">Elogio</option>
+              </select>
+              <label>Motivo do Contato					</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea class="materialize-textarea" id="mensagem" name="mensagem"></textarea>
+              <label for="mensagem">Mensagem</label>
+            </div>
+            <div class="input-field col s12">
+              <button class="btn waves-effect waves-light right botao-contato" type="submit">Enviar<i class="material-icons right">send</i></button>
+            </div>
+            <div class="col s12">
+              <h6 class="right-align">Fique à vontade para mandar sugestões, reclamações, elogios. É sempre um prazer atender você.</h6>
+            </div>
+          </form>
+          <!--div.col.m2.l2.hide-on-med-and-down
+          img(src='img/logotipo-kiv-1.png')
+          
+          
+          
+          
+          -->
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="row">
+        <div class="col l6 s12">
+          <p class="grey-text text-lighten-4">Identidade visual para seu negócio</p>
+        </div>
+        <div class="col l4 offset-l2 s12 right-align">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="portfolio.html">Portfólio</a></li>
+            <li><a class="grey-text text-lighten-3" href="como-funciona.html">Como funciona?</a></li>
+            <li><a class="grey-text text-lighten-3" href="pronta-entrega.html">Pronta Entrega</a></li>
+            <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="row">
+          <div class="white-text col">Karen Produções © - 2016</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/contato.js"></script>
+  </body>
+</html>
