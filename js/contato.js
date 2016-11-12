@@ -9,6 +9,8 @@ $('#mensagem').trigger('autoresize');
 $('#form-email').on('submit', function(event){
 	event.preventDefault();
 
+	var $modal = $('#modal1');
+	var $botaoEnvia = $('button');
 	var modalProperties = {
 		  dismissible: false, // Modal can be dismissed by clicking outside of the modal
 	      opacity: 0.6, // Opacity of modal background
@@ -18,14 +20,16 @@ $('#form-email').on('submit', function(event){
 	      ending_top: '25%', // Ending top style attribute
 	};
 
-	$('button').attr('disabled', 'disabled');
-	$('#modal1').openModal(modalProperties);
+	$botaoEnvia.attr('disabled', 'disabled');
+	$modal.openModal(modalProperties);
 
 	emailjs.sendForm('default_service', 'email_karen_producoes', this)
 		.then(
 			  function(response) {
 			    console.log("SUCCESS", response);
-			    $('#modal1').closeModal(modalProperties);
+			    $modal.closeModal(modalProperties);
+			    $botaoEnvia.removeAttr('disabled');
+			    this.reset();
 			  }, 
 			  function(error) {
 			    console.log("FAILED", error);
