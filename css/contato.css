@@ -43,3 +43,9 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 	text-align: center;
 	max-width: 100%;
 }
+.danger {
+	color: red;
+}
+.success{
+	color: green;
+}
