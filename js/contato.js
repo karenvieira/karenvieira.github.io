@@ -16,5 +16,5 @@ $('#form-email').on('submit', function(event){
 			  }, 
 			  function(error) {
 			    console.log("FAILED", error);
-			  }
+			  });
 });
