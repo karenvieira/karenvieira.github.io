@@ -29,11 +29,14 @@ $('#form-email').on('submit', function(event){
 			    console.log("SUCCESS", response);
 			    $modal.closeModal(modalProperties);
 			    $botaoEnvia.removeAttr('disabled');
-			    this.reset();
+
 			  }, 
 			  function(error) {
 			    console.log("FAILED", error);
+			    $modal.closeModal(modalProperties);
+			    $botaoEnvia.removeAttr('disabled');
 			  });
+	this[0].reset();
 });
 
 	
