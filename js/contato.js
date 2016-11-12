@@ -7,7 +7,8 @@ $('select').material_select();
 $('#mensagem').val('');
 $('#mensagem').trigger('autoresize');
  
-$('#form-email').on('submit', function(){
+$('#form-email').on('submit', function(event){
+	event.preventDefault();
 	emailjs.sendForm('default_service', 'email_karen_producoes', this)
 		.then(
 			  function(response) {
