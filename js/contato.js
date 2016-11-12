@@ -36,7 +36,7 @@ $('#form-email').on('submit', function(event){
 			    console.log("FAILED", error);
 			    $modal.closeModal(modalProperties);
 			    $botaoEnvia.removeAttr('disabled');
-			    console.log(this);
+			    self.reset();
 			  });
 	
 });
