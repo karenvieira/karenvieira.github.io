@@ -8,7 +8,8 @@ $('#mensagem').trigger('autoresize');
 
 $('#form-email').on('submit', function(event){
 	event.preventDefault();
-
+	console.log(this);
+	var self = this;
 	var $modal = $('#modal1');
 	var $botaoEnvia = $('button');
 	var modalProperties = {
