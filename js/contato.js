@@ -7,3 +7,13 @@ $('select').material_select();
 $('#mensagem').val('');
 $('#mensagem').trigger('autoresize');
  
+$('#form-email').on('submit', function(){
+	emailjs.sendForm('default_service', 'email_karen_producoes', this)
+		.then(
+			  function(response) {
+			    console.log("SUCCESS", response);
+			  }, 
+			  function(error) {
+			    console.log("FAILED", error);
+			  }
+});
