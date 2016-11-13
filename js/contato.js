@@ -11,7 +11,7 @@ $('#form-email').on('submit', function(event){
 	var self = this;
 	var $modal = $('#modal1');
 	var $botaoEnvia = $('button');
-	var $feedbackMsg = $('.feedback-msg');
+	var $feedbackMsg = $('#feedback');
 	var modalProperties = {
 		  dismissible: false, // Modal can be dismissed by clicking outside of the modal
 	      opacity: 0.6, // Opacity of modal background
@@ -41,7 +41,7 @@ $('#form-email').on('submit', function(event){
 			    $botaoEnvia.removeAttr('disabled');
 			    self.reset();
 			    $feedbackMsg
-			    	.text('Ocorreu algum erro ao tentar enviar a sua mensagem, envie mais tarde ou entre em contato de outra forma.')
+			    	.html('Ocorreu algum erro ao tentar enviar a sua mensagem, envie mais tarde ou entre em contato de outra forma.<br>Meu e-mail: producaokaren@gmail.com')
 			    	.addClass('danger')
 			    	.fadeIn(1000);
    			    

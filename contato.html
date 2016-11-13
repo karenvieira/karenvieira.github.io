@@ -39,7 +39,7 @@
           <h2 class="center-align titulo titulo-secao borda-inferior-titulo">Contato</h2>
         </div>
         <div class="row">
-          <form class="col s12 m8 offset-m2 l8 offset-l2" method="post" id="form-email">
+          <form class="col s12 m8 offset-m2 l8 offset-l2" id="form-email" method="post">
             <div class="input-field col s12">
               <label for="nome">Nome:</label>
               <input class="validade" id="nome" type="text" placeholder="Seu nome aqui" name="nome_cliente"/>
@@ -64,9 +64,7 @@
               <textarea class="materialize-textarea" id="mensagem" name="mensagem"></textarea>
               <label for="mensagem">Mensagem</label>
             </div>
-            <div class="col s12 feedback">
-              <h6 class="right-align feedback-msg"></h6>
-            </div>
+            <div class="col s12" id="feedback"></div>
             <div class="input-field col s12">
               <button class="btn waves-effect waves-light right botao-contato" type="submit">Enviar<i class="material-icons right">send</i></button>
             </div>
@@ -77,23 +75,15 @@
           <!--div.col.m2.l2.hide-on-med-and-down
           img(src='img/logotipo-kiv-1.png')
           
-          
-          
-          
           -->
         </div>
       </section>
     </main>
-
-
-</div>
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h6>Aguarde alguns segundos... Obrigado por entrar em contato.</h6>
-      <img src="img/balls.gif" alt="" class="">
-    </div>    
-</div>
-
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <h6>Aguarde alguns segundos. Obrigado por entrar em contato.</h6><img src="img/balls.gif" alt="Carregando Email"/>
+      </div>
+    </div>
     <footer class="page-footer">
       <div class="row">
         <div class="col l6 s12">
